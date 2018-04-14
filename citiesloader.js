@@ -10,7 +10,8 @@ const cityRef = document.querySelector("#cityCards")
 
 // Create card title in H2
 const cardTitle = document.createElement("h2")
-cardTitle.textContent(CitiesDatabase.northAmerica[0].name)
+const titleContent = document.createTextNode(CitiesDatabase.northAmerica[0].name)
+cardTitle.appendChild(titleContent)
 cityRef.appendChild(cardTitle)
 // Create card image in img tag
 const cardImage = document.createElement("img")
